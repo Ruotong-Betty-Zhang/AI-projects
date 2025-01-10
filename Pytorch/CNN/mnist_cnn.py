@@ -22,8 +22,8 @@ transform = transforms.Compose([
 ])
 
 # load the datasets
-diabetes1 = datasets.MNIST('../Pytorch/data', train=True, download=True, transform=transform)
-diabetes2 = datasets.MNIST('../Pytorch/data', train=False, download=True, transform=transform)
+diabetes1 = datasets.MNIST('../data', train=True, download=True, transform=transform)
+diabetes2 = datasets.MNIST('../data', train=False, download=True, transform=transform)
 
 # create the data loaders
 train_loader = torch.utils.data.DataLoader(diabetes1, batch_size=128, shuffle=True)
